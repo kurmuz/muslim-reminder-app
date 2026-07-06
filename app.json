@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "MuslimReminder",
+    "slug": "muslim-reminder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0D1B2A",
+    "splash": {
+      "backgroundColor": "#0D1B2A",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.muslim.reminder",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Для определения города и направления Киблы",
+        "NSMotionUsageDescription": "Для работы компаса Киблы"
+      }
+    },
+    "android": {
+      "package": "com.muslim.reminder",
+      "adaptiveIcon": {
+        "backgroundColor": "#0D1B2A"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-location",
+      "expo-notifications",
+      "expo-sensors"
+    ]
+  }
+}

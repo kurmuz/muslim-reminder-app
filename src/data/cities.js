@@ -1,0 +1,25 @@
+export const CITIES = [
+  { name: 'Махачкала', lat: 42.9849, lng: 47.5047, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Москва', lat: 55.7558, lng: 37.6173, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Санкт-Петербург', lat: 59.9343, lng: 30.3351, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Казань', lat: 55.8304, lng: 49.0661, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Грозный', lat: 43.3125, lng: 45.6947, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Хасавюрт', lat: 43.2500, lng: 46.5833, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Дербент', lat: 42.0670, lng: 48.2899, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Буйнакск', lat: 42.8167, lng: 47.1167, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Кизилюрт', lat: 43.2000, lng: 46.8667, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Избербаш', lat: 42.5667, lng: 47.8667, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Каспийск', lat: 42.8833, lng: 47.6333, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Кизляр', lat: 43.8500, lng: 46.7167, tz: 'Europe/Moscow', method: 'MWL' },
+  { name: 'Уфа', lat: 54.7388, lng: 55.9721, tz: 'Asia/Yekaterinburg', method: 'Russia' },
+  { name: 'Екатеринбург', lat: 56.8389, lng: 60.6057, tz: 'Asia/Yekaterinburg', method: 'Russia' },
+  { name: 'Новосибирск', lat: 55.0084, lng: 82.9357, tz: 'Asia/Novosibirsk', method: 'Russia' },
+  { name: 'Нижний Новгород', lat: 56.2965, lng: 43.9361, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Самара', lat: 53.2415, lng: 50.2212, tz: 'Europe/Samara', method: 'Russia' },
+  { name: 'Ростов-на-Дону', lat: 47.2357, lng: 39.7015, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Краснодар', lat: 45.0355, lng: 38.9753, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Сочи', lat: 43.6028, lng: 39.7342, tz: 'Europe/Moscow', method: 'Russia' },
+  { name: 'Сургут', lat: 61.2540, lng: 73.3962, tz: 'Asia/Yekaterinburg', method: 'Russia' },
+];
+
+export const KAABA = { lat: 21.4225, lng: 39.8262 };
