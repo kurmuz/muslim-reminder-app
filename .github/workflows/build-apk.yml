@@ -24,7 +24,10 @@ jobs:
         run: npm install
 
       - name: Patch expo-font
-        run: cp patches/expo-font-build.gradle node_modules/expo-font/android/build.gradle
+        run: |
+          cp patches/expo-font-build.gradle node_modules/expo-font/android/build.gradle
+          cp patches/FontLoaderModule.kt node_modules/expo-font/android/src/main/java/expo/modules/font/FontLoaderModule.kt
+          cp patches/FontUtilsRecords.kt node_modules/expo-font/android/src/main/java/expo/modules/font/FontUtilsRecords.kt
 
       - name: Prebuild Android project
         run: npx expo prebuild --platform android --no-install
