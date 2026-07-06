@@ -23,27 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Patch expo-font build.gradle
-        run: |
-          python3 -c "
-import re
-with open('node_modules/expo-font/android/build.gradle') as f:
-    content = f.read()
-content = re.sub(
-    r\"plugins \{.*?['\"]expo-module-gradle-plugin['\"].*?\}\",
-    \"apply plugin: 'com.android.library'\\n\" +
-    \"apply from: new File(project(':expo-modules-core').projectDir.absolutePath, 'ExpoModulesCorePlugin.gradle')\\n\" +
-    \"applyKotlinExpoModulesCorePlugin()\\n\" +
-    \"useCoreDependencies()\\n\" +
-    \"useDefaultAndroidSdkVersions()\\n\" +
-    \"useExpoPublishing()\",
-    content,
-    flags=re.DOTALL
-)
-with open('node_modules/expo-font/android/build.gradle', 'w') as f:
-    f.write(content)
-print('Patched expo-font/build.gradle')
-"
+      - name: Patch expo-font
+        run: cp patches/expo-font-build.gradle node_modules/expo-font/android/build.gradle
 
       - name: Prebuild Android project
         run: npx expo prebuild --platform android --no-install
